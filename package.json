@@ -1,0 +1,32 @@
+{
+  "name": "mailersoft",
+  "description": "MailerSoft (http://www.mailersoft.com) transactional email API client for node",
+  "version": "0.1.1",
+  "author": {
+    "name": "Artūras Paleičikas"
+  },
+  "email": "paleicikas@gmail.com",
+  "keywords": [
+    "email",
+    "mailersoft",
+    "transactional email"
+  ],
+  "dependencies": {
+    "request": "*"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "main": "./lib/mailersoft",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mailersoft/mailersoft-nodejs.git"
+  },
+  "readme": "# Install\n\n### With NPM\n\n```sh\nnpm install mailersoft\n```\n\n### From source\n\n```sh\ngit clone https://github.com/mailersoft/mailersoft-nodejs.git\ncd mailersoft-nodejs\nnpm install\n```\n\n# Usage\n\n```javascript\nvar mailersoft = require('mailersoft');\n\nmailersoft\n\t.setApiKey('c17c54d0763a096d58cd988bcddf7ae6')\n\t.setVariables({\n\t\t'welcome' => '', \n\t\t'confirmLink' => '' \n\t})\n\t.setRecipient( 'sample.email@gmail.com', 'Sample Client')\n\t.setMail( 10690 )\n\t.send();\n```",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/mailersoft/mailersoft-nodejs/issues"
+  },
+  "_id": "mailersoft@0.1.0",
+  "_from": "mailersoft@*"
+}
